@@ -4,7 +4,7 @@ Packages: **Borrito Ni Johannes**, **CraneDeck**
 
 ## Add in Sileo
 
-Tap on device: [Add to Sileo](sileo://source/https%3A%2F%2Fjhayramirez.github.io%2Fborrito-repo%2F)
+Tap on device: [Add to Sileo](sileo://source/https://jhayramirez.github.io/borrito-repo/)
 
 Or add source manually:
 
