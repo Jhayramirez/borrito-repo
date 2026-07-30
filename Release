@@ -1,0 +1,15 @@
+Origin: srjahh
+Label: Borrito
+Suite: stable
+Version: 1.0
+Codename: stable
+Architectures: iphoneos-arm64
+Components: main
+Description: Borrito Ni Johannes (DoritoPad) updates by srjahh
+Date: Thu, 30 Jul 2026 18:18:49 +0000
+MD5Sum:
+ 2c512d1c18e6855ab66e988a8fb0a02b 472 Packages
+ fe58ef48913d513d818aa31d694fc6b8 351 Packages.gz
+SHA256:
+ ea37508221ad3405045f1d1a738c79967e0b2997ccbb497652b7ab386d3090c4 472 Packages
+ 01ba21662482bbe1c28aba0835cf00bf64b396ddf9beb56dc74aa49976ddfe8e 351 Packages.gz

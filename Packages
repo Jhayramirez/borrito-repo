@@ -1,0 +1,15 @@
+Package: com.srjahh.doritopad
+Name: Borrito Ni Johannes
+Depends: firmware (>=15.0)
+Description: Borrito Ni Johannes — Doritos CLI panel for Appium/WDA. By srjahh.
+Maintainer: srjahh
+Author: srjahh
+Section: Utilities
+Architecture: iphoneos-arm64
+Version: 1.7.9
+Installed-Size: 1628
+Filename: debs/com.srjahh.doritopad_1.7.9_iphoneos-arm64.deb
+Size: 948886
+MD5sum: 6e697ecb94e9ac15e0026dbfc3f41a8a
+SHA256: f8af72034cdade84e9b8a5d944e54bd9ab988cf350161661c82ad2df2d26eb36
+
