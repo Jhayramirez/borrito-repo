@@ -1,23 +1,30 @@
-# Borrito repo (Sileo)
+# Borrito / srjahh APT repo (Sileo)
 
-APT source for **Borrito Ni Johannes** (`com.srjahh.doritopad`) by srjahh.
+Packages: **Borrito Ni Johannes**, **CraneDeck**
 
 ## Add in Sileo
 
-1. Sileo → Sources → **+**
-2. Paste:
+Tap on device: [Add to Sileo](sileo://source/https%3A%2F%2Fjhayramirez.github.io%2Fborrito-repo%2F)
+
+Or add source manually:
 
 ```text
 https://jhayramirez.github.io/borrito-repo/
 ```
 
-3. Refresh sources → install / update **Borrito Ni Johannes**
+Landing page: https://jhayramirez.github.io/borrito-repo/
 
-## Publish a new build
-
-From DoritoPad after packaging:
+## Publish
 
 ```bash
-make package FINALPACKAGE=1
+# Borrito
+cd ~/Documents/DoritoPad && make package FINALPACKAGE=1
+
+# Then publish both (latest Borrito + latest CraneDeck debs)
 ./scripts/publish-sileo-repo.sh
 ```
+
+## Privacy note
+
+GitHub Pages on a free public repo is **world-readable** if someone has the URL (or finds it).
+True private hosting needs paid GitHub private Pages or your own server with auth.

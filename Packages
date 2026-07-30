@@ -1,3 +1,18 @@
+Package: com.srjahh.cranedeck
+Name: CraneDeck
+Depends: firmware (>=15.0), ellekit | mobilesubstrate, preferenceloader, com.opa334.crane (>=1.3.5)
+Description: Beautiful Crane container switcher with home screen app, Settings pane, and cranedeckctl CLI. By srjahh.
+Maintainer: srjahh
+Author: srjahh
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.3.1
+Installed-Size: 4744
+Filename: debs/com.srjahh.cranedeck_1.3.1_iphoneos-arm64.deb
+Size: 3722638
+MD5sum: 27ede2157cd010493808cb44a8d75a87
+SHA256: 6ab5d912b812ff6b11fce14697deeeb55cc64b8604bafef685b3fb7bea7045bd
+
 Package: com.srjahh.doritopad
 Name: Borrito Ni Johannes
 Depends: firmware (>=15.0)
