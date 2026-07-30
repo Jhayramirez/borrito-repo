@@ -131,16 +131,18 @@
       word-break: break-all;
       color: var(--ink);
     }
-    .copy {
-      margin-top: 0.75rem;
-      font-size: 0.9rem;
-      color: var(--chip2);
-      background: none;
-      border: 0;
-      padding: 0;
-      font-family: inherit;
-      cursor: pointer;
+    .hint {
+      margin: 0.85rem 0 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.45;
     }
+    .hint code {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 0.8rem;
+      color: var(--chip2);
+    }
+    #status-line.is-ok { color: var(--ok); }
 
     .section-title {
       font-size: 0.78rem;
@@ -208,14 +210,14 @@
     <p class="lede">Jailbreak packages for the crew — Borrito Ni Johannes and CraneDeck. Add the source once, update from Sileo forever.</p>
 
     <div class="cta-row">
-      <a class="btn btn-primary" id="add-sileo" href="sileo://source/https://jhayramirez.github.io/borrito-repo/">Add to Sileo</a>
-      <a class="btn btn-secondary" id="add-zebra" href="zbra://sources/add/https://jhayramirez.github.io/borrito-repo/">Add to Zebra</a>
+      <button class="btn btn-primary" type="button" id="copy-open-sileo">Copy URL + Open Sileo</button>
+      <button class="btn btn-secondary" type="button" id="copy-btn">Copy URL only</button>
     </div>
 
     <div class="source-box">
-      <label>Source URL (paste this in Sileo if the button fails)</label>
+      <label>Paste this exact URL in Sileo → Sources → +</label>
       <code id="source-url">https://jhayramirez.github.io/borrito-repo/</code>
-      <button class="copy" type="button" id="copy-btn">Copy URL</button>
+      <p class="hint" id="status-line">Safari encodes deep links, so Sileo gets a broken <code>%3A%2F%2F</code> URL. Copy + paste works.</p>
     </div>
 
     <p class="section-title">Packages</p>
@@ -233,22 +235,52 @@
     </div>
 
     <p class="note">
-      Tip: “Add to Sileo” only works on a jailbroken device with Sileo installed.
-      If the button does nothing, copy the source URL and add it manually under Sources.
+      Always paste the plain URL starting with <strong>https://</strong> — never a string that contains <strong>%3A%2F%2F</strong>.
     </p>
   </main>
   <script>
     (function () {
       var source = "https://jhayramirez.github.io/borrito-repo/";
-      var copyBtn = document.getElementById("copy-btn");
-      copyBtn.addEventListener("click", async function () {
-        try {
-          await navigator.clipboard.writeText(source);
-          copyBtn.textContent = "Copied";
-          setTimeout(function () { copyBtn.textContent = "Copy URL"; }, 1400);
-        } catch (e) {
-          copyBtn.textContent = "Select & copy manually";
+      var statusLine = document.getElementById("status-line");
+
+      function copySource() {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          return navigator.clipboard.writeText(source);
         }
+        return new Promise(function (resolve, reject) {
+          var ta = document.createElement("textarea");
+          ta.value = source;
+          document.body.appendChild(ta);
+          ta.select();
+          try {
+            document.execCommand("copy");
+            resolve();
+          } catch (e) {
+            reject(e);
+          } finally {
+            document.body.removeChild(ta);
+          }
+        });
+      }
+
+      document.getElementById("copy-btn").addEventListener("click", function () {
+        copySource().then(function () {
+          statusLine.textContent = "Copied. In Sileo: Sources → + → paste → Add Source.";
+          statusLine.classList.add("is-ok");
+        }).catch(function () {
+          statusLine.textContent = "Long-press the URL above → Copy, then paste in Sileo.";
+        });
+      });
+
+      document.getElementById("copy-open-sileo").addEventListener("click", function () {
+        copySource().then(function () {
+          statusLine.textContent = "Copied. Opening Sileo — paste into Sources → +";
+          statusLine.classList.add("is-ok");
+          // Open Sileo app only (no source deep link — Safari breaks those with %3A%2F%2F)
+          setTimeout(function () { window.location.href = "sileo://"; }, 200);
+        }).catch(function () {
+          statusLine.textContent = "Long-press the URL above → Copy, then open Sileo and paste.";
+        });
       });
 
       fetch("Packages", { cache: "no-store" })
