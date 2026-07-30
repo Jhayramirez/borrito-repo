@@ -8,17 +8,16 @@ APT source for **Borrito Ni Johannes** (`com.srjahh.doritopad`) by srjahh.
 2. Paste:
 
 ```text
-https://srjahh.github.io/borrito-repo/
+https://jhayramirez.github.io/borrito-repo/
 ```
 
 3. Refresh sources → install / update **Borrito Ni Johannes**
 
-## Maintainers
+## Publish a new build
 
-From the DoritoPad tree after `make package`:
+From DoritoPad after packaging:
 
 ```bash
+make package FINALPACKAGE=1
 ./scripts/publish-sileo-repo.sh
 ```
-
-That copies the newest `.deb`, rebuilds `Packages` / `Release`, and pushes this repo (GitHub Pages).
