@@ -21,10 +21,10 @@ Maintainer: srjahh
 Author: srjahh
 Section: Utilities
 Architecture: iphoneos-arm64
-Version: 1.8.1
+Version: 1.8.2
 Installed-Size: 1676
-Filename: debs/com.srjahh.doritopad_1.8.1_iphoneos-arm64.deb
-Size: 951546
-MD5sum: 35f7a825ee970ac9ebb63bf2461377ee
-SHA256: 44f5355450741b0fe3b7f18ac93763df741008e95bfb5994183bcf7ec8d99598
+Filename: debs/com.srjahh.doritopad_1.8.2_iphoneos-arm64.deb
+Size: 953388
+MD5sum: ea3b4f66517945e693879147e709932b
+SHA256: 7f2ade16acd1ca0c5c6398428a3c66a1da711bbbd84359e54bebc58fd45169d2
 
