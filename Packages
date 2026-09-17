@@ -28,3 +28,18 @@ Size: 952760
 MD5sum: cf89cf31b4190900ae98fba99d738e42
 SHA256: 4d336204e5242141252009719613976523ba4385c6acef866f56ab907573cedf
 
+Package: com.srjahh.sbp
+Name: SBP
+Depends: firmware (>=15.0)
+Description: SBP — Snapchat CLEAR + bulk contacts (note=SBP). By srjahh.
+Maintainer: srjahh
+Author: srjahh
+Section: Utilities
+Architecture: iphoneos-arm64
+Version: 0.1.0
+Installed-Size: 240
+Filename: debs/com.srjahh.sbp_0.1.0_iphoneos-arm64.deb
+Size: 25068
+MD5sum: fc2e6317b3094d715339c0ccd4bb0222
+SHA256: 572ba93086fd8bc296b959db0b8b707f40f2f6478f9f738c7cba2a48b35adb90
+
