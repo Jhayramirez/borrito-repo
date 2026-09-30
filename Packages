@@ -36,10 +36,10 @@ Maintainer: srjahh
 Author: srjahh
 Section: Utilities
 Architecture: iphoneos-arm64
-Version: 0.1.6
+Version: 0.1.7
 Installed-Size: 1332
-Filename: debs/com.srjahh.sbp_0.1.6_iphoneos-arm64.deb
-Size: 881336
-MD5sum: 61fe060d0d427db9fa265ed902968eab
-SHA256: a49531dae87f1798efc2cc20251ae35e5297761acdd98fe30900590cdd520ad1
+Filename: debs/com.srjahh.sbp_0.1.7_iphoneos-arm64.deb
+Size: 881912
+MD5sum: 4568d9f3b1579a90b0901bb2341e7750
+SHA256: 29bbc0d093e36d877b283139aec6fd047a90aa7a2c72c8a6e557cd4d6be43bea
 
