@@ -6,12 +6,12 @@ Maintainer: srjahh
 Author: srjahh
 Section: Tweaks
 Architecture: iphoneos-arm64
-Version: 1.3.1
-Installed-Size: 4744
-Filename: debs/com.srjahh.cranedeck_1.3.1_iphoneos-arm64.deb
-Size: 3722638
-MD5sum: 27ede2157cd010493808cb44a8d75a87
-SHA256: 6ab5d912b812ff6b11fce14697deeeb55cc64b8604bafef685b3fb7bea7045bd
+Version: 1.3.2
+Installed-Size: 4792
+Filename: debs/com.srjahh.cranedeck_1.3.2_iphoneos-arm64.deb
+Size: 3724278
+MD5sum: 8800c66b7fafdc86cc733466b32b2f96
+SHA256: 0c81ad5f5603eb35d424918fcf4ea61cf84179b1b5d7b15e078d7e7a25fb84df
 
 Package: com.srjahh.doritopad
 Name: Borrito Ni Johannes
@@ -36,10 +36,10 @@ Maintainer: srjahh
 Author: srjahh
 Section: Utilities
 Architecture: iphoneos-arm64
-Version: 0.1.5
+Version: 0.1.6
 Installed-Size: 1332
-Filename: debs/com.srjahh.sbp_0.1.5_iphoneos-arm64.deb
-Size: 882736
-MD5sum: 5e0cd89a57fa8687fe83134b19e88649
-SHA256: db1168a7a45c58a8b516c9d183ef9564032df46fd5f4cc11a44e6b9c61061ba0
+Filename: debs/com.srjahh.sbp_0.1.6_iphoneos-arm64.deb
+Size: 881336
+MD5sum: 61fe060d0d427db9fa265ed902968eab
+SHA256: a49531dae87f1798efc2cc20251ae35e5297761acdd98fe30900590cdd520ad1
 
