@@ -8,6 +8,7 @@ Section: Tweaks
 Architecture: iphoneos-arm64
 Version: 1.3.3
 Installed-Size: 4792
+Icon: https://jhayramirez.github.io/borrito-repo/icons/com.srjahh.cranedeck.png
 Filename: debs/com.srjahh.cranedeck_1.3.3_iphoneos-arm64.deb
 Size: 3725116
 MD5sum: d1cf11d11d3327c8dfb0fb84a99c4f8d
@@ -21,12 +22,13 @@ Maintainer: srjahh
 Author: srjahh
 Section: Utilities
 Architecture: iphoneos-arm64
-Version: 1.8.9
+Version: 1.8.10
 Installed-Size: 1724
-Filename: debs/com.srjahh.doritopad_1.8.9_iphoneos-arm64.deb
-Size: 959566
-MD5sum: 4f951152649a8afd532e9f31b6ff5150
-SHA256: 696ceb88861f7911ba129170e659058ddba31c73727ba6998fb140e42f29a7a3
+Icon: https://jhayramirez.github.io/borrito-repo/icons/com.srjahh.doritopad.png
+Filename: debs/com.srjahh.doritopad_1.8.10_iphoneos-arm64.deb
+Size: 962410
+MD5sum: 0de0eeebc4a5c0fecc7fc324078cbff8
+SHA256: 99ba02f272e7bb0675643de2af78630f3b5a896f5a322ce52a31a502b9692166
 
 Package: com.srjahh.sbp
 Name: SBP
@@ -38,6 +40,7 @@ Section: Utilities
 Architecture: iphoneos-arm64
 Version: 0.1.7
 Installed-Size: 1332
+Icon: https://jhayramirez.github.io/borrito-repo/icons/com.srjahh.sbp.png
 Filename: debs/com.srjahh.sbp_0.1.7_iphoneos-arm64.deb
 Size: 881912
 MD5sum: 4568d9f3b1579a90b0901bb2341e7750

@@ -5,11 +5,11 @@ Version: 1.0
 Codename: stable
 Architectures: iphoneos-arm64
 Components: main
-Description: srjahh packages — Borrito + CraneDeck
-Date: Wed, 07 Oct 2026 16:47:03 +0000
+Description: srjahh packages — Borrito + CraneDeck + SBP
+Date: Thu, 08 Oct 2026 04:08:12 +0000
 MD5Sum:
- bfe0c016e3a38e5d013b88989cd26568 1480 Packages
- 6ab97224e49debee1824ac3185330818 718 Packages.gz
+ 2a336f8d6910bd2b6c3ec98b56352d6d 1716 Packages
+ ddc89e470812dbea285ca8d2da2fa15f 778 Packages.gz
 SHA256:
- 02c433ef3ffe5a354136bf94c974af9330e7b2633cec4fca81a506518dee1cc4 1480 Packages
- fa0f536348c00dba38708ed606b1122067ce769be00ce4acaa86795908d5e91e 718 Packages.gz
+ c4f78c0c17367daa4746239046e65c763d5dbde3028e231d820398b9eb571460 1716 Packages
+ 3f6dd52ded0d87efe00f8ff67c41ef49e1da291eb99a3ba7ed7dd20a9f160679 778 Packages.gz
