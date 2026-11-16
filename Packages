@@ -22,13 +22,13 @@ Maintainer: srjahh
 Author: srjahh
 Section: Utilities
 Architecture: iphoneos-arm64
-Version: 1.8.12
+Version: 1.8.13
 Installed-Size: 1740
 Icon: https://jhayramirez.github.io/borrito-repo/icons/com.srjahh.doritopad.png
-Filename: debs/com.srjahh.doritopad_1.8.12_iphoneos-arm64.deb
-Size: 969256
-MD5sum: 6755d1d7dbb50d6b1aa548ede5c7a5c1
-SHA256: dcdf08e00e198a8db1c249cb850c18f5a049dd8426bea4cb70d6b65d7ad31cb8
+Filename: debs/com.srjahh.doritopad_1.8.13_iphoneos-arm64.deb
+Size: 967284
+MD5sum: 9547ca2af73a12f5c88922a2674ca162
+SHA256: b8df369cef99f86eca9b0f154016eebbbd9a57a9360cddb8657f2a5a270cc901
 
 Package: com.srjahh.sbp
 Name: SBP
